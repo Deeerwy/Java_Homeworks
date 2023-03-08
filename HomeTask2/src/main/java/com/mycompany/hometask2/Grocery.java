@@ -12,15 +12,14 @@ public class Grocery extends Shop {
     private int types_of_vegetables;
     private int departments;
     private int workers;
-    private String grocery_name;
 
-    public Grocery(int types_of_vegetables, int departments, int workers, String grocery_name, String close_hours, String work_days, String hours) {
-        super(close_hours, work_days, hours);
+    public Grocery(int types_of_vegetables, int departments, int workers, String close_hours, String work_days, String hours, String name) {
+        super(close_hours, work_days, hours, name);
         this.types_of_vegetables = types_of_vegetables;
         this.departments = departments;
         this.workers = workers;
-        this.grocery_name = grocery_name;
     }
+
 
     public int getTypes_of_vegetables() {
         return types_of_vegetables;
@@ -45,14 +44,6 @@ public class Grocery extends Shop {
     public void setWorkers(int workers) {
         this.workers = workers;
     }
-
-    public String getGrocery_name() {
-        return grocery_name;
-    }
-
-    public void setGrocery_name(String grocery_name) {
-        this.grocery_name = grocery_name;
-    }
     
     public void seasonVegetable (String vegetable){
         System.out.println("Shop gives season " + vegetable);
@@ -66,6 +57,6 @@ public class Grocery extends Shop {
 
     @Override
     public String toString() {
-        return "types of vegetables = " + types_of_vegetables + ", amount of departments = " + departments + ", amount of workers = " + workers + ", grocery name = " + grocery_name + ", close hours = " + getClose_hours() + ", work days = "+ getWork_days() + ", open hours = " + getHours();
+        return "types of vegetables = " + types_of_vegetables + ", amount of departments = " + departments + ", amount of workers = " + workers + ", close hours = " + getClose_hours() + ", work days = "+ getWork_days() + ", open hours = " + getHours() + ", name = " + getName();
     }
 }

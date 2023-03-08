@@ -12,11 +12,13 @@ public class Shop {
     private String close_hours;
     private String work_days;
     private String hours;
+    private String name;
 
-    public Shop(String close_hours, String work_days, String hours) {
+    public Shop(String close_hours, String work_days, String hours, String name) {
         this.close_hours = close_hours;
         this.work_days = work_days;
         this.hours = hours;
+        this.name = name;
     }
 
     public String getClose_hours() {
@@ -43,6 +45,15 @@ public class Shop {
         this.hours = hours;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+
     public void SalePrice (int sale){
         System.out.println("Shop gives " + sale + " sale");
     }
@@ -55,6 +66,6 @@ public class Shop {
     
     @Override
     public String toString() {
-        return "hours = " + hours + ", close hours = " + close_hours + ", work days = " + work_days;
+        return "hours = " + hours + ", close hours = " + close_hours + ", work days = " + work_days + ", name = " + name;
     }
 }
