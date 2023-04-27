@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter text here" />
+
+    <Button
+        android:id="@+id/btn_reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_text"
+        android:layout_marginTop="20dp"
+        android:text="Reverse" />
+
+    <Button
+        android:id="@+id/btn_vowel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_reverse"
+        android:layout_marginTop="20dp"
+        android:text="Delete Vowels" />
+
+    <Button
+        android:id="@+id/btn_case"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_vowel"
+        android:layout_marginTop="20dp"
+        android:text="Increase Case" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_case"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Output Text" />
+
+</RelativeLayout>
